@@ -3,9 +3,10 @@ import { isDate } from "./index.js";
 describe("isDate", () => {
   it("return true", () => {
     expect(isDate(new Date())).toBe(true);
+    expect(isDate("2022-01-01")).toBe(true);
   });
   it("return false", () => {
-    expect(isDate("2022-01-01")).toBe(false);
+    expect(isDate("hello")).toBe(false);
     expect(isDate(null)).toBe(false);
     expect(isDate(undefined)).toBe(false);
     expect(isDate({})).toBe(false);

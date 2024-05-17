@@ -1,9 +1,9 @@
-import { isEmpty } from "../../value/is-empty";
-import { isUndefined } from "../../value/is-undefined";
-import { isBoolean } from "../is-boolean";
-import { isFunction } from "../is-function";
-import { isNumber } from "../is-number";
-import { isType } from "../is-type";
+import { isEmpty } from "../../value/is-empty/index.js";
+import { isUndefined } from "../../value/is-undefined/index.js";
+import { isBoolean } from "../is-boolean/index.js";
+import { isFunction } from "../is-function/index.js";
+import { isNumber } from "../is-number/index.js";
+import { isType } from "../is-type/index.js";
 
 export const isDate = (value: unknown): boolean => {
   if (isEmpty(value)) return false;

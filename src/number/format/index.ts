@@ -7,19 +7,6 @@ interface IOptions {
   maximumFractionDigits?: number;
 }
 
-interface NumberFormatOptions {
-  localeMatcher?: string | undefined;
-  style?: string | undefined;
-  currency?: string | undefined;
-  currencySign?: string | undefined;
-  useGrouping?: boolean | undefined;
-  minimumIntegerDigits?: number | undefined;
-  minimumFractionDigits?: number | undefined;
-  maximumFractionDigits?: number | undefined;
-  minimumSignificantDigits?: number | undefined;
-  maximumSignificantDigits?: number | undefined;
-}
-
 export const numberFormat = (
   value: number | string,
   options: IOptions = {
@@ -29,7 +16,7 @@ export const numberFormat = (
   },
 ): string => {
   const numberValue = Number(value.toString());
-  const nOptions: NumberFormatOptions = {};
+  const nOptions: Intl.NumberFormatOptions = new Object();
 
   if (options.minimumFractionDigits !== undefined && options.minimumFractionDigits >= 0) {
     nOptions.minimumFractionDigits = options.minimumFractionDigits;

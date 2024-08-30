@@ -1,6 +1,6 @@
 {
   "name": "@point-hub/js-utils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Js utils",
   "type": "module",
   "main": "lib/index.js",

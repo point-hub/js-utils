@@ -15,7 +15,7 @@ export const numberFormat = (
     maximumFractionDigits: 0,
   },
 ): string => {
-  const numberValue = Number(value.toString());
+  const numberValue = Number(value?.toString() ?? 0);
   const nOptions: Intl.NumberFormatOptions = new Object();
 
   if (options.minimumFractionDigits !== undefined && options.minimumFractionDigits >= 0) {

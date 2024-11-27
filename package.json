@@ -1,6 +1,6 @@
 {
   "name": "@point-hub/js-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Js utils",
   "type": "module",
   "main": "lib/index.js",
@@ -32,15 +32,15 @@
     "url": "https://github.com/point-hub/js-utils.git"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
-    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.1",
     "rimraf": "^6.0.1",
     "ts-jest": "^29.2.5",
     "tsc-alias": "^1.8.10",
